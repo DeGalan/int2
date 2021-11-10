@@ -1,0 +1,41 @@
+.allDays {
+    display: inline-grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 10% auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 5000px;
+    background-repeat: no-repeat;
+    background-color: white;
+    z-index: 1;
+}
+
+.day1 {
+    background-image: url(graphics/pDays/pDays-01.svg);
+}
+
+.day2 {
+    background-image: url(graphics/pDays/pDays-02.svg);
+}
+
+.day3 {
+    background-image: url(graphics/pDays/pDays-03.svg);
+}
+
+.day4 {
+    background-image: url(graphics/pDays/pDays-04.svg);
+}
+
+.day5 {
+    background-image: url(graphics/pDays/pDays-05.svg);
+}
+
+.day6 {
+    background-image: url(graphics/pDays/pDays-06.svg);
+}
+
+.day7 {
+    background-image: url(graphics/pDays/pDays-07.svg);
+}

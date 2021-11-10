@@ -1,0 +1,60 @@
+.allMonths {
+    display: inline-grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 30% auto;
+    width: 40%;
+    height: 40%;
+    border-radius: 5000px;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+.month1 {
+    background-image: url(graphics/pMonths/pMonths-01.svg);
+}
+
+.month2 {
+    background-image: url(graphics/pMonths/pMonths-02.svg);
+}
+
+.month3 {
+    background-image: url(graphics/pMonths/pMonths-03.svg);
+}
+
+.month4 {
+    background-image: url(graphics/pMonths/pMonths-04.svg);
+}
+
+.month5 {
+    background-image: url(graphics/pMonths/pMonths-05.svg);
+}
+
+.month6 {
+    background-image: url(graphics/pMonths/pMonths-06.svg);
+}
+
+.month7 {
+    background-image: url(graphics/pMonths/pMonths-07.svg);
+}
+
+.month8 {
+    background-image: url(graphics/pMonths/pMonths-08.svg);
+}
+
+.month9 {
+    background-image: url(graphics/pMonths/pMonths-09.svg);
+}
+
+.month10 {
+    background-image: url(graphics/pMonths/pMonths-10.svg);
+}
+
+.month11 {
+    background-image: url(graphics/pMonths/pMonths-11.svg);
+}
+
+.month12 {
+    background-image: url(graphics/pMonths/pMonths-12.svg);
+}

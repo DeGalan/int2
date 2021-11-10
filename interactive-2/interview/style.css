@@ -1,0 +1,338 @@
+a {
+    text-decoration: none;
+    width: inherit;
+    height: inherit;
+    position: inherit;
+}
+
+.acumin-1 {
+    font-family: acumin, sans-serif;
+    font-size: 16pt;
+    font-weight: 200;
+    line-height: 1.4em;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+}
+.acumin-1:last-of-type {
+}
+
+.acumin-2 {
+    font-family: acumin, sans-serif;
+    font-size: 16pt;
+    font-weight: 200;
+    line-height: 1.4em;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+}
+
+.bar {
+    z-index: 5;
+    display: flex;
+    position: fixed;
+    margin: auto;
+    width: 100vw;
+    height: 80px;
+    color: white;
+    vertical-align: middle;
+}
+
+.barLogo {
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    margin: 15px 20px 0 20px;
+    z-index: 1;
+    background-attachment: fixed;
+    background-position: center center;
+    background: url(design/Logo-01.svg);
+    background-repeat: no-repeat;
+}
+
+.barMarg {
+    position: relative;
+    height: 64px;
+}
+
+.barMarg2 {
+    position: relative;
+    height: 0;
+    padding-top: 100px;
+    z-index: -1;
+    transform: translate(0,0,0);
+}
+
+.barText {
+    z-index: 1;
+    margin: 0 0 0 70px;
+    position: relative;
+    display: inline-flex;
+    color: white;
+    font-family: acumin-pro-semi-condensed, sans-serif;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 50px;
+    width: 60vw;
+    height: 50px;
+    text-align: left;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bgBlack {
+    background-color: #36363b;
+}
+
+.bgBlue-4 {
+    background-color: #195859;
+}
+
+.bgGold-1 {
+    background-color: #fff387;
+}
+
+.bgGold-2 {
+    background-color: #c2b64c;
+}
+
+.bgGold-3 {
+    background-color: #e3d664;
+}
+
+.bgGreen-4 {
+    background-color: #398552;
+}
+
+.bgPink-4 {
+    background-color: #944b7e;
+}
+
+button {
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+    border: inherit;
+    height: inherit;
+    position: inherit;
+    padding: inherit;
+    margin: inherit;
+    display: inherit;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.buttonNext {
+    position: fixed;
+    right: 0;
+    color: white;
+    width: 10%;
+    text-align: center;
+    padding: 20px 0;
+    display: inline-block;
+}
+
+.buttonPage {
+    font-size: 14pt;
+    position: fixed;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+.buttonPage:first-of-type {
+    border-left: 0;
+    -webkit-backface-visibility: hidden;
+}
+.buttonPage:hover {
+    box-shadow: 0 100px 0 0 rgba(255,255,255,0.25) inset;
+    color: #36363b;
+}
+.buttonPage0 {
+    left: 0;
+    width: 10%;
+    background-image: url(design/Logo-01.svg);
+    background-attachment: local;
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+.buttonPage1 {
+    left: 10%;
+    width: 20%;
+}
+.buttonPage2 {
+    left: 30%;
+    width: 20%;
+}
+.buttonPage3 {
+    left: 50%;
+    width: 20%;
+}
+.buttonPage4 {
+    left: 70%;
+    width: 20%;
+}
+
+.circle {
+    border-radius: 1000px;
+}
+
+.colorBlack {
+    color: #36363b;
+}
+
+.colorGold {
+    color: #c2b64c;
+}
+
+.colorWhite {
+    color: #FFFFFF;
+}
+
+.cursor-1 {
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.guideBox {
+    display: block;
+    overflow: hidden;
+    width: 90%;
+    height: auto;
+}
+
+.guideColor {
+    display: block;
+    height: 72px;
+    width: 72px;
+}
+
+.guideGrid {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+}
+.guideGrid > div {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.guideGridAlt {
+    display: none;
+}
+
+.guideInt {
+    width: 33.333333%;
+}
+
+.guideIntAlt {
+    display: none;
+}
+
+.guideName {
+    margin-left: 15px;
+}
+
+h1 {
+    margin: 0.5em auto;
+    padding: 0;
+    font-family: acumin-pro, sans-serif;
+    font-size: 24pt;
+    font-weight: 600;
+    text-align: left;
+    display: block;
+    width: 90%;
+}
+
+h2.tab {
+    font-size: 18pt;
+    font-weight: 600;
+    text-align: left;
+    display: block;
+}
+
+.main {
+    display: block;
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.trans {
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1080px) {
+    
+    .acumin-1 {
+        display: block;
+        overflow: hidden;
+        margin: 10px 60px;
+        width: auto;
+        font-size: 14pt;
+    }
+    .acumin-1:last-of-type {
+        margin: 0 auto 10 auto;
+    }
+    
+    .guideColor {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .guideGrid {
+        display: none;
+        flex-wrap: nowrap;
+        padding: 20px;
+    }
+    
+    .guideGridAlt {
+        display: grid;
+    }
+    
+    .guideIntAlt {
+        display: inline-flex;
+        margin-bottom: 10px;
+    }
+    
+    .guideName {
+        margin: auto 0 auto 20px;
+        text-align: left;
+    }
+    
+    h1 {
+        width: 90vw;
+        height: auto;
+        margin: 0 auto;
+        font-size: 20pt;
+    }
+    
+    h2.tab {
+        padding: 20px 0 20px 60px;
+    }
+    
+    .main {
+        width: 100%;
+        padding: 1em 0;
+    }
+    
+}

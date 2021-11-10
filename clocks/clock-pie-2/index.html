@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body onload="startTime()">
+
+    <div class="main">
+        <canvas class="canvasStyle" id="canvas"></canvas>
+        
+        <div id="truetime2"></div>
+        
+        <div class="guide">
+            <div class="gTitle">Guide</div>
+            <div class="gContOuter">
+                <div class="gCont">
+                    <div class="cRed gColor"></div>
+                    <div class="gLabel">Months</div>
+                </div>
+                <div class="gCont">
+                    <div class="cGreen gColor"></div>
+                    <div class="gLabel">Weeks</div>
+                </div>
+            </div>
+            
+            <div class="gContOuter">
+                <div class="gCont">
+                    <div class="cPurple gColor"></div>
+                    <div class="gLabel">Days</div>
+                </div>
+                <div class="gCont">
+                    <div class="cBlue gColor"></div>
+                    <div class="gLabel">Hours</div>
+                </div>
+            </div>
+        </div>
+        <div id="truetime"></div>
+    </div>
+    
+    <div class="mode cBlack"></div>
+    
+    <div class="menuCont">
+        <div class="menu">
+            <div class="menuX"></div>
+            <div class="menuTitle"></div>
+            <div id="bg" class="first menuButton menuButtonMode1">Dark Mode</div>
+            <div id="bg2" class="first menuButton menuButtonMode2">Light Mode</div>
+            <div id="guide1" class="menuButton">Hide Guide</div>
+            <div id="guide2" class="menuButton">Show Guide</div>
+            <div id="time1" class="menuButton timeA">Numerical Time</div>
+            <div id="time2" class="menuButton timeA">Numerical Time</div>
+            <div id="time3" class="menuButton timeA">Numerical Time</div>
+        </div>
+    </div>
+    
+    <script src="assets/script.js"></script>
+    <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="assets/mode.js"></script>
+    <script src="assets/jScript/clock.js"></script>
+</body>
+</html>

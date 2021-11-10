@@ -1,0 +1,49 @@
+body {
+    margin: auto;
+    padding: 0;
+}
+
+.pCont {
+    position: relative;
+    display: grid;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    color: #242424;
+}
+
+.pInner {
+    position: relative;
+    display: inline-grid;
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    color: #242424;
+    border-radius: 100%;
+}
+
+.pOuter {
+    position: relative;
+    display: inline-grid;
+    margin: auto;
+    width: 650px;
+    height: 650px;
+    background-color: #242424;
+    color: white;
+    border-radius: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .pInner {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .pOuter {
+        width: 275px;
+        height: 275px;
+    }
+}

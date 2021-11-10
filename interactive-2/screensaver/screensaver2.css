@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.box1 {
+    background-color: rgba(255,0,0,1);
+    animation: anim1 normal infinite 0.01s linear;
+}
+.box2 {
+    background-color: rgba(255,150,0,1);
+    animation: anim1 normal infinite 0.1s linear;
+}
+.box3 {
+    background-color: rgba(255,255,0);
+    animation: anim1 normal infinite 0.25s linear;
+}
+.box4 {
+    background-color: rgba(150,255,0,1);
+    animation: anim1 normal infinite 0.5s linear;
+}
+.box5 {
+    background-color: rgba(0,255,0,1);
+    animation: anim1 normal infinite 1s linear;
+}
+.box6 {
+    background-color: rgba(0,150,255,1);
+    animation: anim1 normal infinite 15s linear;
+}
+.box7 {
+    background-color: rgba(0,0,255,1);
+    animation: anim1 normal infinite 30s linear;
+}
+.box8 {
+    background-color: rgba(150,0,255,1);
+    animation: anim1 normal infinite 60s linear;
+}
+.box9 {
+    background-color: rgba(255,0,150,1);
+    animation: anim1 normal infinite 150s linear;
+}
+.box10 {
+    background-color: rgba(0,0,0,1);
+    animation: anim1 normal infinite 300s linear;
+}
+.box11 {
+    background-color: rgba(255,255,255,1);
+    border: 1px solid rgba(0,0,0,1);
+    animation: anim1 normal infinite 600s linear;
+}
+.box12 {
+    background: repeating-linear-gradient(
+        45deg,
+        #FFFFFF,
+        #FFFFFF 10px,
+        #FF0000 10px,
+        #FF0000 20px
+    );
+    animation: anim1 normal infinite 900s linear;
+}
+.box13 {
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,1),
+        rgba(255,255,255,1) 10px,
+        rgba(255,150,0,1) 10px,
+        rgba(255,150,0,1) 20px
+    );
+    animation: anim1 normal infinite 1800s linear;
+}
+.box14 {
+    background: repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,1),
+        rgba(255,255,255,1) 10px,
+        rgba(255,255,0,1) 10px,
+        rgba(255,255,0,1) 20px
+    );
+    animation: anim1 normal infinite 3600s linear;
+}
+
+.dim {
+    width: 5vw;
+    height: 5vh;
+}
+
+.gridCont {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 100%;
+    background-color: rgba(255,255,255,1);
+}
+.gridItem {
+    background-color: rgba(255,255,255,1);
+    border: 2px solid black;
+    padding: 25px;
+    font-size: 16pt;
+    text-align: left;
+    overflow: hidden;
+}
+
+.main {
+    display: block;
+    grid-gap: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.posRel {
+    position: relative;
+}
+
+@keyframes anim1 {
+    from {
+        left: -5%;
+    }
+    to {
+        left: 100%;
+    }
+}

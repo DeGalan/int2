@@ -1,0 +1,55 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body {
+    font-family: arial, sans-serif;
+}
+
+.donuts{
+    width: 60vw;
+    height: 60vw;
+    position: relative;
+}
+
+.donut {
+    float: left;
+    width: 80%;
+    height: 80%;
+
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+    border-radius: 100%;
+    background: radial-gradient(circle, rgba(125,255,0,1) 0%, rgba(255,0,0,0) 80%);    
+
+}
+
+.donut_hole {
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    
+    width: 30%;
+    height: 30%;
+    margin: 35%;
+
+    border-radius: 100%;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 80%);    
+}
+
+@keyframes animation {
+    0% {
+        transform: scale(1.0);
+    }
+    25% {
+        transform: scale(1.25);
+    }
+    75% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}

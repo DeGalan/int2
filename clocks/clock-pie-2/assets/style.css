@@ -1,0 +1,452 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto ExtraBold";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Light";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-Light.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Thin";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Medium";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Roboto SemiBold";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto Black";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-Black.ttf);
+}
+
+@font-face {
+    font-family: "Roboto ExtraBold";
+    src: url(fonts/Roboto_Slab/static/RobotoSlab-ExtraBold.ttf);
+}
+
+body {
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#canvas {
+    transition: 1s;
+    position: relative;
+    display: inline-grid;
+    margin: auto;
+    overflow: hidden;
+    background: #242424;
+}
+#canvas.dark {
+    transition: 1s;
+    background: white;
+}
+
+.canvasStyle {
+    border-radius: 50%;
+    padding: 10px;
+    border: 2px solid rgba(0,0,0,0);
+}
+
+.cBlack {
+    background-color: #242424;
+}
+
+.cBlue {
+    background-color: #66cccc;
+}
+
+.cGreen {
+    background-color: #47c668;
+}
+
+.cPurple {
+    background-color: #cc69a4;
+}
+
+.cRed {
+    background-color: #d83535;
+}
+
+.cWhite {
+    background-color: #ffffff;
+}
+
+.dispHide {
+    display: hidden;
+}
+
+.gColor {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.gCont {
+    width: 49.5%;
+    position: relative;
+    display: inline-flex;
+    margin: 0 0 15px 0;
+}
+
+.gContOuter {
+    width: 90%;
+    position: relative;
+    display: flex;
+    margin: auto;
+}
+
+.gLabel {
+    position: relative;
+    display: inline-block;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 15pt;
+    margin: auto 0 auto 15px;
+}
+
+.gTitle {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 4px 0 5px 0;
+    color: white;
+    background-color: #242424;
+    margin: 0 auto 15px auto;
+    font-family: "Roboto SemiBold", sans-serif;
+    font-size: 18pt;
+    text-align: center;
+}
+.gTitle.dark {
+    color: #242424;
+    background-color: #ffffff;
+}
+
+.guide {
+    transition: 1s;
+    position: relative;
+    display: inline;
+    margin: 50px auto 0 auto;
+    overflow: hidden;
+    text-overflow: hidden;
+    width: 400px;
+    height: auto;
+    background-color: #eeeeee;
+    border-radius: 5px;
+    border: 2px solid #242424;
+}
+.guide.dark {
+    transition: 1s;
+    background-color: #242424;
+    border: 2px solid #ffffff;
+    color: white;
+}
+
+.main {
+    position: relative;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.menu {
+    transition: 0.5s;
+    position: relative;
+    display: grid;
+    width: 75%;
+    min-width: 360px;
+    max-width: 720px;
+    height: auto;
+    margin: auto;
+    border-radius: 15px;
+    background-color: #242424;
+    vertical-align: middle;
+    padding: 0 0 25px 0;
+    box-shadow: 0 0 100px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Menu Items */
+
+.menuButton {
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    padding: 25px 0;
+    border-top: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
+    font-family: "Roboto Regular", sans-serif;
+    text-indent: 30px;
+    cursor: pointer;
+    z-index: 6;
+}
+.menuButton:hover {
+    transition: 0.5s;
+    color: #242424;
+    box-shadow: 0 100px 0 #ffffff inset;
+}
+.menuButton.first {
+    border-top: none;
+}
+
+.menuButtonMode1::after {
+    content: "\2609";
+    position: absolute;
+    right: 25px;
+    top: 30%;
+    border-radius: 100px;
+    display: inline;
+    font-size: 18pt;
+}
+
+.menuButtonMode2::after {
+    content: "\263C";
+    position: absolute;
+    right: 30px;
+    top: 25%;
+    border-radius: 100px;
+    display: inline;
+    font-size: 20pt;
+}
+
+.menuTitle {
+    transition: 0.5s;
+    position: relative;
+    display: inline-block;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 18pt;
+    color: #242424;
+    background-color: #ffffff;
+    text-align: left;
+    text-indent: 50px;
+    width: 90%;
+    height: 25px;
+    padding: 15px 5%;
+}
+.menuTitle::before {
+    content: "Menu";
+    text-transform: uppercase;
+}
+
+.menuX {
+    transition: 0.5s;
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    left: 5%;
+    top: 5%;
+    color: #242424;
+    border: 2px solid #242424;
+    border-radius: 1000px;
+    cursor: pointer;
+    z-index: 6;
+    text-align: center;
+}
+.menuX:hover {
+    transition: 0.5s;
+    background-color: #242424;
+    color: #ffffff;
+    transform: rotate(90deg) scale(0.9);
+}
+.menuX::before {
+    content: "\0000D7";
+    line-height: 1.5em;
+}
+
+/* Menu Items END */
+
+.menuCont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background-color: rgba(0,0,0,0.25);
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.mode {
+    transition: 0.5s;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 90px;
+    height: 90px;
+    color: white;
+    text-align: center;
+    line-height: 90px;
+    font-size: 45px;
+    font-weight: 400;
+    cursor: pointer;
+    z-index: 5;
+}
+.mode:hover {
+    transition: 0.5s;
+    background-color: #121212;
+}
+.mode::before {
+    content: "\002630";
+}
+
+.mode.dark {
+    background-color: #ffffff;
+    color: #242424;
+}
+.mode.dark:hover {
+    background-color: #bbbbbb;
+    color: #121212;
+}
+
+.tBlack {
+    color: #242424;
+}
+
+.timeA::after {
+    display: inline-grid;
+    position: absolute;
+    right: 30px;
+}
+
+#time1::after {
+    content: "None";
+}
+
+#time2::after {
+    content: "Upper";
+}
+
+#time3::after {
+    content: "Relative";
+}
+
+#truetime {
+    transition: 1s;
+    display: grid;
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 250px;
+    height: 90px;
+    color: white;
+    background-color: #242424;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 16pt;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+#truetime:hover {
+    transition: 1s;
+    opacity: 0.75;
+}
+#truetime.dark {
+    transition: 1s;
+    color: #242424;
+    background-color: white;
+}
+#truetime.dark:hover {
+    transition: 1s;
+    opacity: 0.75;
+}
+
+#truetime2 {
+    transition: 1s;
+    display: grid;
+    position: relative;
+    margin: 50px auto 0 auto;
+    width: 400px;
+    height: 90px;
+    color: white;
+    background-color: #242424;
+    font-family: monospace;
+    font-weight: 400;
+    font-size: 16pt;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border: 2px solid #242424;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#truetime2:hover {
+    transition: 1s;
+    opacity: 0.75;
+    color: white;
+}
+#truetime2.dark#hover {
+    transition: 1s;
+    opacity: 0.75;
+}
+#truetime2.dark {
+    transition: 1s;
+    color: #242424;
+    background-color: white;
+}
+
+.tWhite {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 720px) {
+    .guide {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+    .guide.dark {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+    }
+    
+    .menu {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    
+    #truetime2 {
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+    }
+}

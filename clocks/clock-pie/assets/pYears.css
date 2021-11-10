@@ -1,0 +1,12 @@
+.year {
+    display: inline-grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 40% auto;
+    width: 20%;
+    height: 20%;
+    background-color: #242424;
+    border-radius: 5000px;
+    z-index: 5;
+}

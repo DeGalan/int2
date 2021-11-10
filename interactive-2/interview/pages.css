@@ -1,0 +1,229 @@
+/* CLASSES */
+
+.acumin {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 300;
+    font-size: 16pt;
+    line-height: 1.35em;
+    letter-spacing: 0.5px;
+}
+
+.bgDeGalanA {
+    background-color: #76acad;
+}
+.bgDeGalanA::before {
+    content: 'Dr. DeGalan';
+    display: block;
+    position: relative;
+    font-weight: 600;
+}
+
+.bgDeGalanQ {
+    background-color: #4b9394;
+}
+.bgDeGalanQ::before {
+    content: 'Steven';
+    display: block;
+    position: relative;
+    font-weight: 600;
+}
+
+.bgStevenA {
+    background-color: #75c991;
+}
+.bgStevenA::before {
+    content: 'Steven';
+    display: block;
+    position: relative;
+    font-weight: 600;
+}
+
+.bgStevenQ {
+    background-color: #55a670;
+}
+.bgStevenQ::before {
+    content: 'Steven';
+    display: block;
+    position: relative;
+    font-weight: 600;
+}
+
+.bgWendyA {
+    background-color: #e691cb;
+}
+.bgWendyA::before {
+    content: 'Wendy';
+    display: block;
+    position: relative;
+    font-weight: 600;
+}
+
+.bgWendyA2 {
+    background-color: #e691cb;;
+    overflow: hidden;
+}
+.bgWendyA2::before {
+    content: 'Wendy sent an image...';
+    display: block;
+    position: relative;
+    font-weight: 300;
+}
+
+.bgWendyImg {
+    overflow: hidden;
+    background-image: url(images/wendy/mandela-and-gates.jpg);
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 420px;
+    margin: 15px 0 0 0;
+    border-radius: 5px;
+}
+
+.bgWendyQ {
+    background-color: #b06399;
+    overflow: hidden;
+}
+.bgWendyQ::before {
+    content: 'Steven';
+    display: block;
+    font-weight: 600;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.bodyDeGalan {
+    background-color: #e5e5f7;
+    opacity: 1;
+    background-image:  linear-gradient(#76acad 2px, transparent 2px), linear-gradient(90deg, #4b9394 2px, transparent 2px), linear-gradient(#2e7273 1px, transparent 1px), linear-gradient(90deg, #195859 1px, transparent 1px);
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+}
+
+.bodyWendy {
+    background-color: #e5e5e5;
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #e961cb 25%, transparent 25%), linear-gradient(225deg, #cc7ab4 25%, transparent 25%), linear-gradient(45deg, #b06399 25%, transparent 25%), linear-gradient(315deg, #944b7e 25%, transparent 25%);
+    background-position:  10px 0, 10px 0, 0 0, 0 0;
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    background-blend-mode: color;
+}
+
+.bubbleA {
+    border-radius: 25px 25px 25px 0;
+    padding: 25px 30px 30px 30px;
+    margin: 15px 30% 15px 0;
+}
+
+.bubbleQ {
+    border-radius: 25px 25px 0 25px;
+    padding: 25px 30px 30px 30px;
+    margin: 15px 0 15px 30%;
+}
+
+.colorWendy {
+    background-color: #e691cb;
+}
+
+.hide {
+    display: none;
+}
+
+.mainAll {
+    display: block;
+    width: 85vw;
+    max-width: 1080px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.nextWendy {
+    background-color: #e691cb;
+    border-radius: 0;
+    width: 100%;
+}
+.nextWendy:hover {
+    background-color: white;
+    color: #e691cb;
+}
+
+.nextDeGalan {
+    background-color: #76acad;
+    border-radius: 0;
+    width: 100%;
+}
+.nextDeGalan:hover {
+    background-color: white;
+    color: #76acad;
+}
+
+.nextSteven {
+    background-color: #75c991;
+    border-radius: 0;
+    width: 100%;
+}
+.nextSteven:hover {
+    background-color: white;
+    color: #75c991;
+}
+
+.pageMarg {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0f0f0f0f;
+    border-radius: 1000px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #9f9f9f9f;
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+@media only screen and (max-width: 1080px) {
+    .acumin {
+        font-size: 13pt;
+        letter-spacing: 0.35px;
+    }
+    
+    .bubbleA {
+        margin: 1em 10% 0 0;
+    }
+    
+    .bubbleQ {
+        margin: 1em 0 0 10%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .acumin {
+        font-size: 11pt;
+        line-height: 1.2em;
+        letter-spacing: 0.25px;
+    }
+    
+    .bubbleA {
+        margin: 1em 15% 0 0;
+    }
+    
+    .bubbleQ {
+        margin: 1em 0 0 15%;
+    }
+}

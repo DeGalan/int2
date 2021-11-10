@@ -1,0 +1,38 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* .cont {
+    position: relative;
+    display: block;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+} */
+
+h1 {
+    font-family: 'Montserrat', 'Helvetica', sans-serif;
+    font-size: 20pt;
+    font-weight: 300;
+    text-align: left;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    color: white;
+    background-color: rgba(45,90,150,1);
+    padding: 1em 0;
+}
+
+.margin {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.marginText {
+    text-indent: 5vw;
+}

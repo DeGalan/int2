@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Experimental Clocks</title>
+    <link rel="stylesheet" href="clock.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Experimental Clocks</h1>
+    
+    <div class="cat">
+        <h3>Digital Clock</h3>
+        <h2 id="clock-1"></h2>
+    </div>
+    
+    <div class="cat">
+        <h3>Word Clock</h3>
+        <h2 id="word"></h2>
+    </div>
+    
+    <div class="cat">
+        <h3>Image Clock</h3>
+        <div class="cat-2">
+            <img id="img" src="images/Wookie.png">
+        </div>
+    </div>
+    
+    <script>
+        // Console Log
+        var today = new Date();
+        console.log(today);
+        
+        // [1] Digital Clock
+        setInterval(function digital(){
+            var today = new Date();
+            var seconds = today.getSeconds();
+            var minutes = today.getMinutes();
+            var hours = today.getHours();
+            var years = today.getYear();
+            
+            // Formatting
+            if (seconds < 10) {
+                seconds = '0' + seconds;
+            }
+            if (minutes < 10) {
+                minutes = '0' + minutes;
+            }
+            if (hours < 10) {
+                hours = '0' + hours;
+            }
+            
+            var time = hours + ':' + minutes + ':' + seconds + ',' + years;
+            document.getElementById('clock-1').innerHTML = time;
+        }, 1000);
+        
+        // [2] Word Clock
+        setInterval(function word() {
+            var today = new Date();
+            var seconds = today.getSeconds();
+            var minutes = today.getMinutes();
+            var hours = today.getHours();
+            
+            // Even VS. Odd
+            if (seconds % 2) {
+                document.getElementById('word').innerHTML = 'Tick';
+            }
+            else {
+                document.getElementById('word').innerHTML = 'Tock';
+            }
+        }, 1000);
+        
+        // [3] Image Clock
+        setInterval(function image() {
+            var today = new Date();
+            var seconds = today.getSeconds();
+            var minutes = today.getMinutes();
+            var hours = today.getHours();
+            
+            if(seconds % 2) {
+                var img = document.getElementById('img');
+                img.src = "images/Lyric.png";
+            }
+            else {
+                var img = document.getElementById('img');
+                img.src = "images/Wookie.png";
+            }
+        }, 1000);
+        
+    </script>
+
+</body>
+
+</html>

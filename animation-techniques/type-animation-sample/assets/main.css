@@ -1,0 +1,85 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body {
+    font-family: times;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+#text div{
+    text-align: center;    
+    margin: 100px;
+}
+
+.int {
+    transform-origin: center;
+    animation: narrow 10s infinite alternate;
+}
+
+.two {
+    transform-origin: center;
+    animation: wide 10s infinite alternate;
+}
+
+.screen {
+  transform-origin: center;
+  animation: flipping 3s infinite alternate;
+}
+
+.animations {
+  transform-origin: center;
+  animation: zooming 2s ease-in-out infinite alternate;
+}
+
+.exclam {
+  font-size: 3em;
+  position: absolute;
+  animation: leftRight 6s ease-in-out infinite alternate;
+}
+
+@keyframes leftRight {
+  from {
+    left: 0;
+  }
+  to {
+    left: 80vw;
+  }
+}
+
+@keyframes narrow {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(.5, 20);
+  }
+}
+
+@keyframes wide {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(20, 1);
+  }
+}
+
+@keyframes flipping {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes zooming {
+  from {
+    transform: scale(0);
+  } 
+  to {
+    transform: scale(6);
+  }
+}
+
+

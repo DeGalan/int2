@@ -1,0 +1,109 @@
+.allHours {
+    display: inline-grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 5000px;
+    background-repeat: no-repeat;
+    background-color: white;
+    z-index: 0;
+}
+
+.hour1 {
+    background-image: url(graphics/pHours/pHours-01.svg);
+}
+
+.hour2 {
+    background-image: url(graphics/pHours/pHours-02.svg);
+}
+
+.hour3 {
+    background-image: url(graphics/pHours/pHours-03.svg);
+}
+
+.hour4 {
+    background-image: url(graphics/pHours/pHours-04.svg);
+}
+
+.hour5 {
+    background-image: url(graphics/pHours/pHours-05.svg);
+}
+
+.hour6 {
+    background-image: url(graphics/pHours/pHours-06.svg);
+}
+
+.hour7 {
+    background-image: url(graphics/pHours/pHours-07.svg);
+}
+
+.hour8 {
+    background-image: url(graphics/pHours/pHours-08.svg);
+}
+
+.hour9 {
+    background-image: url(graphics/pHours/pHours-09.svg);
+}
+
+.hour10 {
+    background-image: url(graphics/pHours/pHours-10.svg);
+}
+
+.hour11 {
+    background-image: url(graphics/pHours/pHours-11.svg);
+}
+
+.hour12 {
+    background-image: url(graphics/pHours/pHours-12.svg);
+}
+
+.hour13 {
+    background-image: url(graphics/pHours/pHours-13.svg);
+}
+
+.hour14 {
+    background-image: url(graphics/pHours/pHours-14.svg);
+}
+
+.hour15 {
+    background-image: url(graphics/pHours/pHours-15.svg);
+}
+
+.hour16 {
+    background-image: url(graphics/pHours/pHours-16.svg);
+}
+
+.hour17 {
+    background-image: url(graphics/pHours/pHours-17.svg);
+}
+
+.hour18 {
+    background-image: url(graphics/pHours/pHours-18.svg);
+}
+
+.hour19 {
+    background-image: url(graphics/pHours/pHours-19.svg);
+}
+
+.hour20 {
+    background-image: url(graphics/pHours/pHours-20.svg);
+}
+
+.hour21 {
+    background-image: url(graphics/pHours/pHours-21.svg);
+}
+
+.hour22 {
+    background-image: url(graphics/pHours/pHours-22.svg);
+}
+
+.hour23 {
+    background-image: url(graphics/pHours/pHours-23.svg);
+}
+
+.hour24 {
+    background-image: url(graphics/pHours/pHours-24.svg);
+}

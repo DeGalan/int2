@@ -1,0 +1,29 @@
+.allWeeks {
+    display: inline-grid;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 20% auto;
+    width: 60%;
+    height: 60%;
+    border-radius: 5000px;
+    background-repeat: no-repeat;
+    background-color: white;
+    z-index: 3;
+}
+
+.week1 {
+    background-image: url(graphics/pWeeks/pWeeks-01.svg);
+}
+
+.week2 {
+    background-image: url(graphics/pWeeks/pWeeks-02.svg);
+}
+
+.week3 {
+    background-image: url(graphics/pWeeks/pWeeks-03.svg);
+}
+
+.week4 {
+    background-image: url(graphics/pWeeks/pWeeks-04.svg);
+}

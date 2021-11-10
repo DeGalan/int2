@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "spooky0";
+    src: url("assets/fonts/Bodoni-72-OS.tcc");
+}
+
+@font-face {
+    font-family: "spooky1";
+    src: url("assets/fonts/Bodoni-72-Smallcaps-Book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "spooky2";
+    src: url("assets/fonts/Bodoni-72.ttc");
+}
+
+@font-face {
+    font-family: "spooky3";
+    src: url("assets/fonts/Bodoni-Ornaments.ttf") format("truetype");
+}
+
+body {
+    cursor: none;
+    margin: auto;
+    padding: auto;
+    background-color: #242424;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    align-items: center;
+}
+
+h1 {
+    transition: 5s;
+    cursor: none;
+    font-family: "spooky1", serif;
+    font-weight: bold;
+    font-size: 8vw;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    color: #242424;
+    z-index: 1;
+}
+h1:hover {
+    transition: 2s;
+    cursor: none;
+    text-shadow: 0 0 10px #ffffff;
+}
+
+h2 {
+    transition: 3s;
+    cursor: none;
+    font-family: "spooky3", fantasy;
+    font-weight: bold;
+    font-size: 200px;
+    margin: auto;
+    padding: auto;
+    
+}
+
+.lantern {
+    animation: flicker-1 5s infinite;
+    transition: 0.1s;
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    border-radius: 100%;
+    box-shadow: 0 0 100px #f6fae7 inset, 0 0 10px #f6fae7, 0 0 250px rgba(255,255,0,1);
+    cursor: none;
+    z-index: -1;
+}
+
+.surprise {
+    transition: 0.5s;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 25px;
+    background-color: transparent;
+    text-align: center;
+    cursor: crosshair;
+    z-index: 2;
+}
+.surprise:hover {
+    transition: 0.125s;
+    box-shadow: 0 0 12px rgba(255,255,255,0.5), 0 0 50px rgba(255,255,255,0.5) inset;
+}
+.surprise:hover::before {
+    transition: 0.125s;
+    content: "BOO!";
+}
+
+.surpriseNew {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    display: grid;
+    align-self: center;
+    align-content: center;
+    color: #242424;
+    font-family: "spooky2", fantasy;
+    font-weight: bold;
+    text-align: center;
+}
+
+@keyframes flicker-1 {
+    0% {
+        opacity: 0.25;
+    }
+    5% {
+        opacity: 1;
+    }
+    19% {
+        opacity: 0;
+    }
+    48% {
+        opacity: 0.25;
+    }
+    73% {
+        opacity: 0.85;
+    }
+    90% {
+        opacity: 0.125;
+    }
+    100% {
+        opacity: 1;
+    }
+}

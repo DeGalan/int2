@@ -1,0 +1,64 @@
+* {margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body {
+    overflow: hidden;
+    background: yellow;
+}
+
+svg {
+    margin: 100px auto;
+    display: block;
+}
+
+svg#bird {
+    margin: 0px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+/* 
+
+reference: https://css-tricks.com/svg-line-animation-works/
+
+*/
+
+path {
+
+    stroke: blue;
+    stroke-width: 2px;
+
+    stroke-dasharray: 20;
+    animation: dash 5s linear forwards;
+
+
+    /* uncomment for infinite drawing / redraw */
+
+    /*
+
+    stroke-dasharray: 3500;
+    stroke-dashoffset: 3500;
+    animation: dash 5s linear infinite alternate;
+
+    */
+}
+
+/* animate path */
+
+@keyframes dash {
+  to {
+
+    /* constantly move the dashes */    
+    
+    stroke-dashoffset: 100;
+    
+    
+
+    /* draws in / redraw */
+
+    /*
+    stroke-dashoffset: 0;
+    */
+
+  }
+}

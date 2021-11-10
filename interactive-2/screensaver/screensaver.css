@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.box1 {
+    width: 35vw;
+    height: 5vh;
+    top: 2vh;
+    animation: move1 normal infinite 10s linear;
+}
+.box2 {
+    width: 45vw;
+    height: 25vh;
+    top: 45vh;
+    animation: move1 normal infinite 2.5s linear;
+}
+.box3 {
+    width: 17vw;
+    height: 5vh;
+    bottom: 5vh;
+    animation: move1 normal infinite 18s linear;
+}
+.box4 {
+    width: 17vw;
+    height: 9vw;
+    animation: move1 normal infinite 15s linear;
+}
+.box5 {
+    width: 30vw;
+    height: 4vh;
+    bottom: 50vh;
+    animation: move1 normal infinite 30s linear;
+}
+.box6 {
+    width: 15vw;
+    height: 15vh;
+    top: 75vh;
+    animation: move1 normal infinite 5s linear;
+}
+.box7 {
+    width: 50vw;
+    height: 35vh;
+    bottom: 30vh;
+    animation: move1 normal infinite 3s linear;
+}
+.box8 {
+    width: 22vw;
+    height: 15vh;
+    top: 60vh;
+    animation: move1 normal infinite 7s linear;
+}
+.box9 {
+    width: 13vw;
+    height: 13vh;
+    top: 95vh;
+    animation: move1 normal infinite 20s linear;
+}
+
+.c1 {
+    background-color: rgba(255,255,0,0.5);
+}
+.c2 {
+    background-color: rgba(90,255,70,0.75);
+}
+.c3 {
+    background-color: rgba(0,255,255,0.25);
+}
+.c4 {
+    background-color: rgba(50,90,210,0.5);
+}
+.c5 {
+    background-color: rgba(45,70,155,0.9);
+}
+.c6 {
+    background-color: rgba(70,0,205, 0.35);
+}
+.c7 {
+    background-color: rgba(20,180,75, 0.45);
+}
+.c8 {
+    background-color: rgba(255,35,105, 0.87);
+}
+.c9 {
+    background-color: rgba(25,60,255,0.65);
+}
+
+.dispBlock {
+    display: block;
+}
+
+.main {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.posAbs {
+    position: absolute;
+}
+.posRel {
+    position: relative;
+}
+
+@keyframes move1 {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}

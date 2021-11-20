@@ -1,0 +1,546 @@
+/* COLORS
+    #ff5e35
+    #ffb638
+    #ffa420
+    #cd487b
+    #242424
+*/
+
+* {
+    transition: 0.5s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.article {
+    position: relative;
+    display: grid;
+    width: 100vw;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 725px;
+    min-height: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.ar {
+    position: absolute;
+    display: inline-block;
+    background-color: #ff5e35;
+    color: white;
+    width: 46.5%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.ar-1 {
+    margin: 25px 0 0 2.25%;
+}
+
+.ar-2 {
+    right: 0;
+    margin: 25px 2.25% 0 0;
+}
+
+.ar-3 {
+    margin: 375px 0 0 2.25%;
+}
+
+.ar-4 {
+    right: 0;
+    margin: 375px 2.25% 0 0;
+}
+
+.ar-img {
+    width: 100%;
+    height: 240px;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.ar-img-1 {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/50/Naked_lab_rats.jpg");
+}
+
+.ar-img-2 {
+    background-image: url("https://cdn.pixabay.com/photo/2019/03/23/11/00/rat-4075129_1280.jpg");
+}
+
+.ar-img-3 {
+    background-image: url("https://cdn.pixabay.com/photo/2019/01/18/02/09/bunny-3939052_1280.jpg");
+}
+
+.ar-img-4 {
+    background-image: url("https://www.maxpixel.net/static/photo/1x/Auction-Judge-Gavel-Law-Hammer-Legal-Justice-3575414.jpg");
+}
+
+.ar-title {
+    font-weight: bold;
+    font-size: 18pt;
+    padding: 25px;
+}
+
+body {
+    font-family: acumin-pro, sans-serif;
+    margin: auto;
+    padding: auto;
+    overflow-x: hidden;
+}
+
+
+.cat {
+    display: inline-flex;
+    position: relative;
+    width: 33.333333%;
+    height: 100px;
+    color: white;
+    font-size: 13pt;
+    cursor: pointer;
+}
+
+.cat-1 {
+    background-color: #ffa420;
+}
+
+.cat-2 {
+    background-color: #ffb638;
+}
+
+.cat-3 {
+    background-color: #ffa420;
+}
+
+.cat-sub {
+    width: 100%;
+    height: auto;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    display: grid;
+    background-color: #242424;
+    color: white;
+    width: 100vw;
+    height: 75px;
+    overflow: hidden;
+    grid-template-areas: "area-1 area-2";
+    grid-template-columns: 50% 50%;
+}
+
+.footer-1 {
+    position: relative;
+    display: inline-grid;
+    height: 75px;
+    overflow: hidden;
+    grid-template-areas: "about contact donate";
+    grid-template-columns: 33% 33% 33%;
+    grid-area: area-1;
+}
+
+.footer-2 {
+    position: relative;
+    display: inline-grid;
+    height: 75px;
+    overflow: hidden;
+    grid-template-areas: "blank adopt merch";
+    grid-template-columns: 33% 33% 33%;
+    grid-area: area-2;
+}
+
+.footer-about {
+    grid-area: about;
+}
+.footer-about::before {
+    content: "About";
+}
+
+.footer-adopt {
+    grid-area: adopt;
+}
+.footer-adopt::before {
+    content: "Adopt";
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+.footer-contact::before {
+    content: "Contact";
+}
+
+.footer-donate {
+    grid-area: donate;
+}
+.footer-donate::before {
+    content: "Donate";
+}
+
+.footer-merch {
+    grid-area: merch;
+}
+.footer-merch::before {
+    content: "Merch";
+}
+
+.form-cat {
+    display: grid;
+    grid-template-areas: "info email";
+}
+
+.form-area {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width: 50%;
+    height: auto;
+    min-height: 120px;
+    margin: 0 auto;
+    padding: 40px 50px 50px 50px;
+    color: white;
+    background-color: #ffa420;
+    border-radius: 5px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-areas: "input";
+    grid-template-columns: 500px;
+    grid-gap: 0;
+    margin: 0 auto;
+}
+
+.form-grid-2 {
+    display: grid;
+    grid-template-areas: "input-2 input-3";
+    grid-template-columns: 240px 240px;
+    grid-gap: 20px;
+    margin: auto;
+}
+
+.form-info {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.form-input {
+    position: relative;
+    display: inline-grid;
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    text-indent: 15px;
+    text-decoration: none;
+    font-size: 15pt;
+    border-radius: 5px;
+}
+
+.form-main {
+    position: relative;
+    display: inline-grid;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+    height: auto;
+    padding: 25px 0;
+    background-color: white;
+}
+
+.form-title {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+    color: #ffa420;
+    margin: 15px 0;
+}
+
+.form-title-1 {
+    position: relative;
+    display: inline-grid;
+    margin: 15px auto 5px auto;
+    width: 500px;
+    height: auto;
+    font-size: 10pt;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.form-title-2 {
+    position: relative;
+    display: inline-grid;
+    margin: 15px auto 5px auto;
+    width: 100%;
+    height: auto;
+    font-size: 10pt;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.info {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding: 0;
+    font-family: acumin-pro, sans-serif;
+}
+
+input {
+    background-color: white;
+    border: none;
+    outline: none;
+}
+input:focus {
+    border: none;
+    outline: none;
+}
+
+.main {
+    font-family: acumin-pro, sans-serif;
+    text-align: center;
+    display: grid;
+    position: relative;
+    margin: 75px 0 0 0;
+    width: 100vw;
+    height: 480px;
+    align-content: center;
+    align-items: center;
+    background-color: #ffb638;
+    background-blend-mode: color-burn;
+    background-image: url(https://cdn.pixabay.com/photo/2013/11/20/23/00/test-214185_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 100px 100px 100px rgba(255,0,0,0.125) inset;
+}
+.main:hover {
+    box-shadow: 0 100px 100px 100px rgba(255,0,0,0.5) inset;
+}
+
+.mainButton {
+    display: grid;
+    position: relative;
+    width: 420px;
+    margin: 10px auto;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 18pt;
+    background-color: #ffb638;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.125);
+}
+.mainButton:hover {
+    box-shadow: 0 0 25px rgba(0,0,0,0.125), 0 100px 100px #ff5e35 inset;
+}
+.mainButton::before {
+    display: contents;
+    content: "Learn More";
+}
+
+.mainDesc {
+    position: relative;
+    display: grid;
+    color: white;
+    font-weight: normal;
+    font-size: 15pt;
+    text-shadow: 0 0 50px rgba(0,0,0,0.25);
+}
+
+.mainTitle {
+    position: relative;
+    display: grid;
+    color: white;
+    font-weight: bold;
+    font-size: 24pt;
+    text-shadow: 0 0 50px rgba(0,0,0,0.25);
+}
+
+.nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    width: 100vw;
+    height: 75px;
+    color: white;
+    background-color: #242424;
+    z-index: 1;
+}
+
+.nav-0 {
+    width: 75px;
+    height: 75px;
+}
+
+.nav-logo {
+    width: 55px;
+    height: 75px;
+    position: fixed;
+    left: 15px;
+    align-content: center;
+    background-image: url(images/logo/logo-01.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+.nav-logo::after {
+    content: "PAL";
+    font-family: acumin-pro;
+    font-weight: 1000;
+    font-size: 45px;
+    position: fixed;
+    left: 80px;
+    align-content: center;
+    width: auto;
+    height: 70px;
+    display: grid;
+}
+
+.navToggle {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: grid;
+    color: white;
+    font-size: 24pt;
+    width: 75px;
+    height: 75px;
+    background-color: #242424;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 2;
+}
+.navToggle::before {
+    content: "\2630";
+}
+
+.panel {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    background-color: #eeeeee;
+    color: #242424;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .article {
+        position: static;
+        display: block;
+        margin-top: 300px;
+        text-align: center;
+        height: auto;
+        width: 75%;
+    }
+    
+    .ar {
+        position: relative;
+        width: 100%;
+        margin: 40px auto -20px auto;
+        border-radius: 0;
+        background-color: transparent;
+        color: #ff5e35;
+    }
+    
+    .ar-img {
+        height: 360px;
+        border-radius: 5px;
+    }
+    
+    .ar-title {
+        margin-top: -.5em;
+    }
+    
+    .cat {
+        position: absolute;
+        display: grid;
+        width: 100%;
+    }
+    
+    .cat-1 {
+        margin: 0;
+    }
+    
+    .cat-2 {
+        margin: 100px 0 0 0;
+    }
+    
+    .cat-3 {
+        margin: 200px 0 0 0;
+    }
+    
+    .form-area {
+        width: auto;
+    }
+    
+    .form-main {
+        position: relative;
+        min-height: 400px;
+        margin-top: 50px;
+        padding: 25px 0;
+    }
+    
+    .panel {
+        display: block;
+        position: static;
+        margin: 300px 0 -300px 0;
+    }
+    
+}
+
+@media only screen and (max-width: 650px) {
+    
+    .article {
+        width: 90%;
+    }
+    
+    .ar-img {
+        height: 240px;
+    }
+    
+    .form-area {
+        width: 100%;
+        padding: 15px 0 25px 0;
+        border-radius: 0;
+    }
+    
+    .form-main {
+        padding: 0;
+        min-height: 0;
+    }
+    
+    .form-grid {
+        width: 75%;
+        grid-template-columns: 100%;
+    }
+    
+    .form-grid-2 {
+        width: 75%;
+        grid-template-columns: 48% 48%;
+        grid-gap: 4%;
+    }
+    
+}

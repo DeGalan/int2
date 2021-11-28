@@ -1,0 +1,643 @@
+/* COLORS 
+
+[Blue] #218aff
+[Green] #39ff5a
+[Gray-1] #fdfdfd
+[Gray-2] #aeb9cc
+[Gray-3] #d8d8d8
+[White] #fdfdfd
+
+*/
+
+@font-face {
+    src: url(fonts/Arial.ttf);
+    font-family: "Arial";
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    outline: none;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #cccccc;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: white;
+    display: inherit;
+}
+
+.back {
+    position: absolute;
+    display: grid;
+    width: 100px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    color: #218aff;
+    z-index: 5;
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    text-align: center;
+    font-size: 13pt;
+    cursor: pointer;
+}
+.back::before {
+    content: "< Back";
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    color: #111111;
+    overflow-x: hidden;
+    font-family: "Arial", sans-serif;
+}
+
+#body {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    background: white;
+}
+
+.chat-box-home {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    top: 60px;
+    left: 0;
+    overflow: hidden;
+    align-content: flex-start;
+    z-index: 1;
+}
+
+.chat-box {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 460px;
+    background-color: white;
+    top: 60px;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    align-content: flex-start;
+}
+
+.chat-box-degalan {
+    z-index: 0;
+}
+
+.chat-box-steven {
+    z-index: 0;
+}
+
+.chat-box-wendy {
+    z-index: 0;
+}
+
+.chat-right {
+    position: relative;
+    display: grid;
+    width: 70%;
+    color: white;
+    margin: 10px 5% 10px 15%;
+    padding: 5%;
+    border-radius: 20px 20px 0 20px;
+}
+.chat-right:first-of-type {
+    margin-top: 20px;
+}
+
+.chat-left {
+    position: relative;
+    display: grid;
+    width: 70%;
+    background-color: #dddddd;
+    color: #111111;
+    margin: 10px 15% 10px 5%;
+    padding: 5%;
+    border-radius: 20px 20px 20px 0;
+}
+
+.contact {
+    position: relative;
+    display: grid;
+    width: 85%;
+    height: 80px;
+    margin: 0 0 0 15%;
+    background-color: white;
+    color: #111111;
+    border-bottom: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.contact-name {
+    position: absolute;
+    top: 15px;
+    left: 80px;
+    display: inline-grid;
+    color: #111111;
+    font-size: 12pt;
+    font-weight: normal;
+}
+
+.contact-portrait {
+    position: relative;
+    display: inline-grid;
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    background-color: #dddddd;
+    align-self: center;
+    border-radius: 1000px;
+}
+
+#device {
+    position: fixed;
+    display: grid;
+    width: 420px;
+    height: 720px;
+    place-self: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.device {
+    position: relative;
+    display: grid;
+    width: 360px;
+    height: auto;
+    min-height: 580px;
+    overflow: hidden;
+}
+
+#device-inner {
+    position: absolute;
+    display: grid;
+    width: 360px;
+    height: 580px;
+    background-color: white;
+    place-self: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.dot {
+    position: relative;
+    display: grid;
+    width: 15px;
+    height: 15px;
+    color: white;
+    border-radius: 100px;
+    place-content: center;
+    place-items: center;
+    place-self: center;
+}
+
+.dot-1 {
+    background-color: #ff1493;
+}
+
+.dot-2 {
+    background-color: #218aff;
+}
+
+.dot-3 {
+    background-color: #39ff4a;;
+}
+
+.dot-area-1 {
+    position: absolute;
+    display: grid;
+    width: 14%;
+    height: 80px;
+    left: 0;
+    top: 0;
+}
+
+.dot-area-2 {
+    position: absolute;
+    display: grid;
+    width: 14%;
+    height: 80px;
+    left: 0;
+    top: 80px;
+}
+
+.dot-area-3 {
+    position: absolute;
+    display: grid;
+    width: 14%;
+    height: 80px;
+    left: 0;
+    top: 160px;
+}
+
+footer {
+    position: fixed;
+    display: grid;
+    width: 360px;
+    height: 60px;
+    top: 520px;
+    left: 0;
+    background-color: #fafafa;
+    border-top: 1px solid #dddddd;
+}
+
+h1 {
+    position: fixed;
+    display: grid;
+    place-self: center;
+    text-align: center;
+    font-size: 16pt;
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: absolute;
+    display: grid;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #dddddd;
+    z-index: 5;
+}
+
+iframe {
+    outline: none;
+    border: none;
+}
+
+main {
+    display: grid;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+}
+
+#name-degalan::before {
+    content: "Dr. Steve DeGalan";
+}
+
+#name-steven::before {
+    content: "Steven DeGalan";
+}
+
+#name-wendy::before {
+    content: "Wendy";
+}
+
+/* GUI & TIMESTAMPS */
+
+#block {
+    display: grid;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    z-index: 51;
+}
+
+/* Wendy Barrows */
+
+#send-w0 {
+    z-index: 30;
+}
+
+#send-w1 {
+    z-index: 29;
+}
+
+#send-w2 {
+    z-index: 28;
+}
+
+#send-w3 {
+    z-index: 27;
+}
+
+#send-w4 {
+    z-index: 26;
+}
+
+#send-w5 {
+    z-index: 25;
+}
+
+#send-w6 {
+    z-index: 24;
+}
+
+.send-wendy {
+    position: absolute;
+    display: grid;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.time-wendy {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 5px 0;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 10pt;
+    line-height: 20px;
+}
+.time-wendy::before {
+    content: "Text Message";
+    font-weight: bold;
+}
+.time-wendy::after {
+    content: "Today 5:13pm";
+    font-weight: normal;
+}
+
+#wendy-pic {
+    position: relative;
+    display: inline-grid;
+    transition: 0.25s;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin: 5px 0 0 0;
+    background-image: url(../../assets/img/mandela-and-gates.jpeg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    cursor: pointer;
+}
+#wendy-pic:hover {
+    transition: 0.5s;
+    background-size: 115%;
+    box-shadow: 0 240px 0 rgba(0,0,0,0.5) inset;
+}
+#wendy-pic:hover::after {
+    transition: 0.5s;
+    content: "mandela-and-gates.jpeg";
+    color: #eeeeee;
+    align-self: flex-end;
+    display: inline-grid;
+    width: 100%;
+    height: auto;
+    margin: 0 0 5px 0;
+    font-size: 10pt;
+    text-align: center;
+}
+
+#wendy-pic-bg {
+    position: fixed;
+    display: inline-grid;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(0,0,0,0.75);
+    place-items: center;
+    place-content: center;
+    z-index: 1;
+}
+
+#wendy-pic-big {
+    position: fixed;
+    display: inline-grid;
+    width: 90%;
+    height: 480px;
+    background-image: url(../img/mandela-and-gates.jpeg);
+    background-attachment: scroll;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    overflow: hidden;
+}
+
+#wendy-pic-x {
+    transition: 0.5s;
+    position: absolute;
+    display: inline-grid;
+    left: 30px;
+    top: 120px;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 100px;
+    place-content: center;
+    place-items: center;
+    cursor: pointer;
+}
+#wendy-pic-x:hover {
+    transition: 0.5s;
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0.5);
+    color: #111111;
+}
+#wendy-pic-x::after {
+    content: "\00D7";
+    color: white;
+    text-align: center;
+}
+#wendy-pic-x:hover::after {
+    transition: 0.5s;
+    color: #111111;
+}
+
+/* Dr. Steven DeGalan */
+
+.send-degalan {
+    position: absolute;
+    display: grid;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    bottom: 10px;
+    right: 10px;
+}
+
+#send-d0 {
+    z-index: 40;
+}
+
+#send-d1 {
+    z-index: 39;
+}
+
+#send-d2 {
+    z-index: 38;
+}
+
+#send-d3 {
+    z-index: 37;
+}
+
+#send-d4 {
+    z-index: 36;
+}
+
+#send-d5 {
+    z-index: 35;
+}
+
+#send-d6 {
+    z-index: 34;
+}
+
+#send-d7 {
+    z-index: 33;
+}
+
+.time-degalan {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 5px 0;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 10pt;
+    line-height: 20px;
+}
+.time-degalan::before {
+    content: "Text Message";
+    font-weight: bold;
+}
+.time-degalan::after {
+    content: "Today 4:52pm";
+    font-weight: normal;
+}
+
+/* Steven DeGalan */
+
+#send-s0 {
+    z-index: 50;
+}
+
+#send-s1 {
+    z-index: 49;
+}
+
+#send-s2 {
+    z-index: 48;
+}
+
+#send-s3 {
+    z-index: 47;
+}
+
+#send-s4 {
+    z-index: 46;
+}
+
+#send-s5 {
+    z-index: 45;
+}
+
+#send-s6 {
+    z-index: 44;
+}
+
+#send-s7 {
+    z-index: 43;
+}
+
+#send-s8 {
+    z-index: 42;
+}
+
+#send-s9 {
+    z-index: 41;
+}
+
+#send-s10 {
+    z-index: 40;
+}
+
+#send-s11 {
+    z-index: 39;
+}
+
+#send-s12 {
+    z-index: 38;
+}
+
+#send-s13 {
+    z-index: 37;
+}
+
+#send-s14 {
+    z-index: 36;
+}
+
+#send-s15 {
+    z-index: 35;
+}
+
+#send-none {
+    z-index: 11;
+}
+
+.send-steven {
+    position: absolute;
+    display: grid;
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.time-steven {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin: 20px 0 5px 0;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+    color: #aaaaaa;
+    text-align: center;
+    font-size: 10pt;
+    line-height: 20px;
+}
+.time-steven::before {
+    content: "Text Message";
+    font-weight: bold;
+}
+.time-steven::after {
+    content: "Today 4:20pm";
+    font-weight: normal;
+}

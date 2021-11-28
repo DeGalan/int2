@@ -1,0 +1,128 @@
+#settings {
+    position: relative;
+    display: grid;
+    width: 360px;
+    height: 170px;
+    margin: 480px auto 0 auto;
+    border-radius: 0 0 4px 4px;
+}
+
+#settings-area {
+    position: absolute;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.settings-all {
+    position: absolute;
+    display: grid;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#settings-case {
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* SETTINGS COLORS */
+
+#c1 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    place-items: center;
+}
+#c1::before {
+    content: "Black";
+}
+
+#c2 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #aaaaaa;
+    place-items: center;
+}
+#c2::before {
+    content: "Gray";
+}
+
+#c3 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #218aff;
+    place-items: center;
+}
+#c3::before {
+    content: "Blue";
+}
+
+#c4 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #39ff4a;
+    place-items: center;
+}
+#c4::before {
+    content: "Green";
+}
+
+#c5 {
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ff1493;
+    place-items: center;
+}
+#c5::before {
+    content: "Pink";
+}
+
+/* */
+
+#settings-handle {
+    position: relative;
+    display: grid;
+    width: 25%;
+    height: 5px;
+    margin: -10px auto 0 auto;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+#widget-home {
+    transition: 1s;
+    position: absolute;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    bottom: 0;
+    margin: 0 0 8px 0;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 100px;
+    z-index: 10;
+    cursor: pointer;
+}
+#widget-home:hover {
+    transition: 0.25s;
+    box-shadow: 0 0 100px rgba(255,255,255,0.25) inset;
+}

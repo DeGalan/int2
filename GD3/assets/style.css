@@ -445,6 +445,40 @@ input:focus {
     color: #242424;
 }
 
+#petCallout {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+#petInfo {
+    position: relative;
+    display: grid;
+    width: 60%;
+    height: auto;
+    text-align: let;
+    font-size: 15pt;
+    font-weight: 100;
+}
+
+#petition {
+    position: relative;
+    display: grid;
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    padding: 50px 0;
+    color: white;
+    background-color: #cd487b;
+    place-items: center;
+    place-content: center;
+    place-self: center;
+}
+
 @media only screen and (max-width: 1000px) {
     
     .article {

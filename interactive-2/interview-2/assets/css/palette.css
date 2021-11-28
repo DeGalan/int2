@@ -1,0 +1,39 @@
+.bg-black {
+    background-color: #111111;
+}
+
+.bg-blue {
+    background-color: #218aff;
+}
+
+.bg-gray {
+    background-color: #dddddd;
+}
+
+.bg-green {
+    background-color: #39ff4a;
+}
+
+.bg-grey {
+    background-color: #ededed;
+}
+
+.bg-pink {
+    background-color: #ff1493;
+}
+
+.bg-slate {
+    background-color: #bbbbbb;
+}
+
+.bg-trueBlack {
+    background-color: black;
+}
+
+.c-black {
+    color: #111111;
+}
+
+.c-white {
+    color: white;
+}

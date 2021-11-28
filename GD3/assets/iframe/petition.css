@@ -1,0 +1,28 @@
+#pet {
+    position: relative;
+    display: grid;
+    width: 100vw;
+    height: auto;
+    color: white;
+    background-color: #ffa420;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.pet-cat-1 {
+    position: relative;
+    display: grid;
+    grid-template-areas: "i1 i2";
+    grid-template-columns: "50% 50%";
+    grid-gap: 15px 25px;
+    width: 85%;
+    height: auto;
+    overflow: hidden;
+    place-content: center;
+}
+
+.pet-input {
+    margin: auto;
+    width: 100%;
+    grid-area: i1;
+}
